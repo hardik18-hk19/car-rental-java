@@ -37,4 +37,14 @@ class Car{
         return basePricePerDay*rentalDays;
     }
 
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+    public void rent(){
+        isAvailable=false;
+    }
+    public  void returnCar(){
+        isAvailable=true;
+    }
 }
+
